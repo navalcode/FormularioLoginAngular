@@ -1,0 +1,10 @@
+.paquete{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  margin: auto;
+  display: flex;
+  justify-content:center;
+}
