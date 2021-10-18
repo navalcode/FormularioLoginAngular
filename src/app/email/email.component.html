@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label for="name">Email</label>
+  <br>
+  <input type="text" class="form-control" id="email" required [(ngModel)]="prueba.email" name="email" />
+  <br>
+  <label for="name">Password</label>
+  <br>
+  <input type="text" class="form-control" id="email" required [(ngModel)]="prueba.password" name="password" />
+  <br><br>
+  <button mat-raised-button color="primary" (click)="imprimir(prueba.email,prueba.password)">Login</button>
+</div>
