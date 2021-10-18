@@ -1,6 +1,10 @@
 .paquete{
+  margin-top: 25px;
   display: flex;
   justify-content: center;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 button{
