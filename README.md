@@ -1,13 +1,21 @@
-<!-- navalcode:historical-context -->
-**Historical learning project · Proyecto histórico de aprendizaje**
+# Angular form components
 
-Angular/TypeScript exercise with form, email and toolbar components. This presentation update does not claim a current build or production readiness. Original documentation and attribution are retained below when present.
+[English](#overview) · [Español](#resumen)
 
-**Español.** Ejercicio Angular/TypeScript con componentes de formulario, email y barra. Esta actualización de presentación no acredita compilación actual ni uso en producción. Se conserva la documentación y atribución originales cuando existen.
+## Overview
 
-[Current mobile portfolio / Portfolio móvil actual](https://passkeys.navalcode.org/portfolio/) · [GitHub profile](https://github.com/navalcode)
+Angular/TypeScript exercise with form, email and toolbar components.
 
----
+An earlier learning exercise. The source is preserved with its original toolchain; compatibility with current versions has not been revalidated.
+
+## Resumen
+
+Ejercicio Angular/TypeScript con componentes de formulario, email y barra.
+
+Ejercicio de una etapa anterior de aprendizaje. Se conserva con sus herramientas originales; no se ha vuelto a validar con versiones actuales.
+
+<details>
+<summary>Original documentation and credits · Documentación y créditos originales</summary>
 
 # FormularioLogin
 
@@ -36,3 +44,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+</details>
+
+[More of my work · Más proyectos](https://github.com/navalcode)
