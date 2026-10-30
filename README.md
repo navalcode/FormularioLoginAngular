@@ -1,50 +1,51 @@
-# Angular form components
+# Angular form practice
 
-[English](#overview) · [Español](#resumen)
+[Español](README.es.md)
 
-## Overview
+A small Angular 12 exercise for template-driven forms. Enter an example email and password, check the fields, correct any errors, show/hide the password and clear the form. Spanish opens by default; English is available without losing the draft.
 
-Angular/TypeScript exercise with form, email and toolbar components.
+This is local validation. It does not authenticate a user, create an account or send the values anywhere. A successful check clears the password and keeps the email so you can try again. The earlier console logging of email/password and inactive menu/favorite/share controls have been removed.
 
-An earlier learning exercise. The source is preserved with its original toolchain; compatibility with current versions has not been revalidated.
+![The built form in Spanish](docs/screenshots/form-desktop.png)
 
-## Resumen
+## Run
 
-Ejercicio Angular/TypeScript con componentes de formulario, email y barra.
+Use the historical **Node 14.21.3 / npm 6** toolchain in an isolated environment:
 
-Ejercicio de una etapa anterior de aprendizaje. Se conserva con sus herramientas originales; no se ha vuelto a validar con versiones actuales.
+```sh
+npm ci
+npm start -- --host 127.0.0.1
+# Open http://127.0.0.1:4200
+npm run build -- --configuration production
+```
 
-<details>
-<summary>Original documentation and credits · Documentación y créditos originales</summary>
+The production files are generated in `dist/FormularioLogin/`. The original dependency versions, lockfile and build budgets are retained. Angular lists 12.2 among [unsupported versions](https://angular.dev/reference/versions); reproducing this exercise is not a recommendation for a new production login system or a current dependency security audit.
 
-# FormularioLogin
+## Try the flow
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+1. Choose **Check form** with empty fields. Error links identify each field; focus moves to the first error.
+2. Enter `alex@example.test` and an example password. A malformed email is rejected; a password is required. There is no invented strength policy or server credential check.
+3. Use **Show/Hide password**, then check the form. The password is cleared and masked; the result is announced without printing entered values.
+4. Switch languages with a draft or errors present. The state stays intact and the labels/messages change.
+5. Use **Clear** to remove both fields and errors, hide the password and return focus to email. Reloading starts an empty Spanish form.
 
-## Development server
+The email is limited to 254 characters and the password to 128. No application request, cookie or storage write is made by this flow. Browser autofill/password-manager behavior belongs to the browser and is not validated by this exercise.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Code and checks
 
-## Code scaffolding
+- [`email.component.ts`](src/app/email/email.component.ts) owns the form state, first-error focus and clearing behavior; its template uses Angular `NgForm`/`NgModel` with native labelled controls.
+- [`i18n.ts`](src/app/i18n.ts) contains the EN/ES text and English fallback. The root component updates the document language/title; language changes keep the same form instance.
+- [`app.component.spec.ts`](src/app/app.component.spec.ts) tests the complete form flow, correction, focus, masking, language changes and absence of console/storage writes. The toolbar tests cover language controls.
+- The older `Login` model and Material import module remain as historical source; the active form uses neither. No new authentication service or framework has been added.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+npm test -- --watch=false --browsers=ChromeHeadless
+# Or attach a browser to the loopback address printed by this runner:
+npm test -- --watch=false --karma-config karma.manual.conf.js
+```
 
-## Build
+The reviewed suite has **20 tests**. [Verification](docs/VERIFICATION.md) distinguishes local tests, browser checks, known limits and the original failing scaffold assertion. There is no hosted CI or end-to-end runner configured. [DESIGN.md](DESIGN.md) explains layout, focus, copy and reduced motion.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## History and notices
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-</details>
-
-[More of my work · Más proyectos](https://github.com/navalcode)
+This learning repository keeps its original history and dependency licenses. The [original CLI notes](docs/ORIGINAL_README.md) are preserved as historical documentation; their `ng e2e` section describes a runner that would need to be added. The redesign adds original source and fictional test inputs, with no employer/client material. Outfit is served locally under OFL; see [third-party notices](THIRD_PARTY.md). This review does not add a blanket license to the historical repository.

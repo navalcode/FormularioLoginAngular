@@ -1,3 +1,6 @@
-.example-spacer {
-  flex: 1 1 auto;
-}
+header { max-width: 1440px; margin: auto; padding: 20px 48px; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+header > span { font-size: 1.25rem; font-weight: 600; }
+nav { display: flex; gap: 12px; }
+button { border: 0; border-radius: 0; background: none; padding: 10px 8px; border-bottom: 2px solid transparent; }
+button[aria-pressed="true"] { border-color: var(--ink); color: var(--accent); }
+@media (max-width: 520px) { header { align-items: start; padding: 16px 24px; flex-wrap: wrap; gap: 8px; } header > span { padding-top: 10px; } nav { margin-left: auto; } }

@@ -1,14 +1,18 @@
-.paquete{
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-button{
-  margin: auto;
-  display: flex;
-  justify-content:center;
-}
+form { margin: 0; }
+.field { margin-bottom: 22px; }
+label { display: block; font-size: 1.125rem; font-weight: 600; margin-bottom: 10px; }
+input { width: 100%; min-height: 64px; border: 1px solid var(--ink); border-radius: 12px; padding: 14px 16px; background: var(--paper); color: var(--ink); }
+.password-field { position: relative; }
+.password-field input { padding-right: 108px; }
+.visibility { position: absolute; right: 4px; top: 8px; padding: 8px 12px; background: transparent; border: 0; color: var(--accent); min-width: 96px; }
+.field-note { font-size: .9375rem; line-height: 1.4; margin: 8px 0 0; }
+[aria-invalid="true"] { border-width: 2px; border-color: var(--accent); }
+.error-summary { border-left: 3px solid var(--accent); padding: 0 0 0 16px; margin-bottom: 24px; }
+.error-summary p { margin-top: 0; font-weight: 600; }
+.error-summary a { display: block; padding: 10px 0; min-height: 48px; }
+.actions { display: grid; gap: 12px; }
+.primary { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+.result { min-height: 48px; line-height: 1.5; margin: 20px 0 0; }
+.result:not(:empty) { animation: feedback-in 180ms ease-out; }
+@keyframes feedback-in { from { opacity: .2; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .result:not(:empty) { animation: none; } }

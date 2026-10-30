@@ -1,3 +1,9 @@
-<app-toolbar></app-toolbar>
-
-<app-email></app-email>
+<a class="skip-link" href="#email">{{ copy.skip }}</a>
+<app-toolbar [language]="language" (languageChange)="setLanguage($event)"></app-toolbar>
+<main>
+  <div class="introduction">
+    <h1 id="form-title">{{ copy.title }}</h1>
+    <p id="form-intro">{{ copy.intro }}</p>
+  </div>
+  <app-email [language]="language"></app-email>
+</main>

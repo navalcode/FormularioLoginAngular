@@ -1,6 +1,6 @@
-
-app-email{
-  display: flex;
-  justify-content:center;
-   align-items:center;
-}
+main { max-width: 1206px; margin: auto; padding: 104px 48px 80px; display: grid; grid-template-columns: 1.15fr 1fr; align-items: start; gap: 100px; }
+.introduction { padding-top: 32px; }
+h1 { font-size: clamp(2.75rem, 5.4vw, 4.5rem); line-height: 1.05; letter-spacing: -.045em; margin: 0 0 28px; max-width: 620px; }
+p { font-size: 1.25rem; line-height: 1.6; max-width: 520px; margin: 0; }
+app-email { display: block; width: 100%; max-width: 440px; }
+@media (max-width: 820px) { main { padding: 44px 24px 56px; grid-template-columns: 1fr; gap: 36px; } .introduction { padding: 0; } app-email { max-width: none; } h1 { margin-bottom: 20px; } }

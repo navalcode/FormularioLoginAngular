@@ -1,0 +1,118 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "2d8b368c2b65b2450428746a3f9a78686bc53a5a8c405d3c8e49991dbf3a4727"
+  },
+  {
+    "path": "README.md",
+    "sha256": "2d77ea5b6fcc80d1f6aa4e6332f0847617d02c85e3773dc84847505c05ec7871"
+  },
+  {
+    "path": "README.es.md",
+    "sha256": "71cebb5e55ac4bbe8375f6aa23e88e595d5ba5bbe2e67c6aedd2aaf5778f84c4"
+  },
+  {
+    "path": "DESIGN.md",
+    "sha256": "d13e78e5bd8c26db74d54ef76fb51cfb3a8622758b3ffab29b4712f207232753"
+  },
+  {
+    "path": "THIRD_PARTY.md",
+    "sha256": "fb3523811c683eb6a9c490e2b32df662d4c43411881bc3cf3b2c2336d2330b5a"
+  },
+  {
+    "path": "angular.json",
+    "sha256": "4abb1d07ac2156093d732e18d6dae6b0daf7f8b463cf4da33011706329ad0f24"
+  },
+  {
+    "path": "package.json",
+    "sha256": "c013b385d37ee5f098b359b0aae1094f2bb25fd3551cede8459c0e2d099dec74"
+  },
+  {
+    "path": "karma.manual.conf.js",
+    "sha256": "8c6a181dc1e220d272cdf6cad66894876e8eb5e2acb14fc5237c1ba4580cbceb"
+  },
+  {
+    "path": "src/index.html",
+    "sha256": "63bbae8293e0dfc82b5c612937e5166c7fdc4a94a5c6fd7718856a68429c7b53"
+  },
+  {
+    "path": "src/styles.css",
+    "sha256": "71d3e4399d16834e6f9b40c10fb69cfe7e7166ffdff26250815d43adee77c46b"
+  },
+  {
+    "path": "src/app/app.component.ts",
+    "sha256": "6baede9971784bb2c0758107b79c535ab0fe63697561fc89721956c6a4b4e476"
+  },
+  {
+    "path": "src/app/app.component.html",
+    "sha256": "1e00cebb68c19755e77875b51ed4df92a88f9eac67621438160196b36aaa20f6"
+  },
+  {
+    "path": "src/app/app.component.css",
+    "sha256": "e8543ad5e785ad82d4b2dd8c1f2bcd5a0d5f9181a3a130b14bf60db49d0b1364"
+  },
+  {
+    "path": "src/app/app.component.spec.ts",
+    "sha256": "e2826117fdc8267bdc89f9a1a66b4f7fdbfceb6fde81b3c7b21c89596e8e3290"
+  },
+  {
+    "path": "src/app/app.module.ts",
+    "sha256": "d054624f139c6bbf801fe9fe4b27f38596db2fd6949ef9181fdbcb81176304d5"
+  },
+  {
+    "path": "src/app/i18n.ts",
+    "sha256": "57a93a4c23b6009a83a8b7caeb9c35367e2abff1aa1bee0569c84e89b8ddb7e5"
+  },
+  {
+    "path": "src/app/email/email.component.ts",
+    "sha256": "b377a99910dead310912ab1b3617ddcd16a9580528379645c93989f11805e4e7"
+  },
+  {
+    "path": "src/app/email/email.component.html",
+    "sha256": "7f685eff7042ae97f9a5a7999960a81a5e618b415186d3dcab9c10daada57256"
+  },
+  {
+    "path": "src/app/email/email.component.css",
+    "sha256": "e2dcc48210a29597922bf87bcaaec5eeb55cce87d4a51fdf012faf64d184623c"
+  },
+  {
+    "path": "src/app/my-toolbar/my-toolbar.component.ts",
+    "sha256": "1d4634e190ffa7ef16d2c8780f8619b7a3fbe77884c229acb6ad13f4e71ecbfc"
+  },
+  {
+    "path": "src/app/my-toolbar/my-toolbar.component.html",
+    "sha256": "6cf43430c74aee919601c5bf1b891686957046e1703f24f4970b5d39298e66df"
+  },
+  {
+    "path": "src/app/my-toolbar/my-toolbar.component.css",
+    "sha256": "bcb8f4fe1a4b745bee2c04b161f1d473649bcbf71ced38e302149f3dab36a7e7"
+  },
+  {
+    "path": "src/app/my-toolbar/my-toolbar.component.spec.ts",
+    "sha256": "ed388e47b1519b98b1cd3e68ea130fee46015a2276eb1caface65c6b452d3f43"
+  },
+  {
+    "path": "src/assets/fonts/Outfit.woff2",
+    "sha256": "ed629d88c2db8ace1b3ac85fbf1fe0223d7272defaa817d1955100101966f0fb"
+  },
+  {
+    "path": "src/assets/fonts/OFL.txt",
+    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+  },
+  {
+    "path": "docs/ORIGINAL_README.md",
+    "sha256": "0f60a7a898e95d5c7975745b2657dfdf6b8c9c193bc81cf82b4c9d1ecd1d5829"
+  },
+  {
+    "path": "docs/VERIFICATION.md",
+    "sha256": "f422231f0626eca0c9f4e96b866d57e089dabd9d45406c0d8b5d19065eb16bba"
+  },
+  {
+    "path": "docs/screenshots/form-desktop.png",
+    "sha256": "123d2bf6f74d8faa70aba2c312eb0e474b79ca628c990a3353863118c5607f0d"
+  },
+  {
+    "path": "docs/screenshots/form-mobile.png",
+    "sha256": "41b54a0c181d6a32278fd83c14a71cae2cce9ac880640ddf137f1431f45ac785"
+  }
+]
